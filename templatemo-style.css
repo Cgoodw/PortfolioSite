@@ -11,8 +11,69 @@ http://www.templatemo.com/preview/templatemo_451_modest
   -webkit-text-size-adjust: 100%;
 }
 
+
+/*slideshow*/
+/* Slideshow container */
+
+  #slideshow { 
+    margin: 2px auto; 
+    position: relative;
+    align-content: center;
+    width: 320px; 
+    height: 230px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+#slideshow img { 
+   width: 300px;
+    height: 220px;
+    
+}
+#slideshow > div { 
+    position: absolute; 
+    align-content: center;
+    top: 2px; 
+    left: 2px; 
+    right: 2px; 
+    bottom: 2px; 
+}
+@media (min-width: 768px) {
+    
+    
+  #slideshow { 
+    margin: 50px auto; 
+    position: relative;
+    align-content: center;
+    width: 580px; 
+    height: 420px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    align-content: center;
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+    
+    #slideshow img { 
+    width: 560px;
+    height: 400px;
+    
+}
+}
+
+
+/*slideshow*/
+
+
+
+
 body {
-  margin: 0;
+  margin: 1;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
@@ -2000,7 +2061,6 @@ output {
 }
 
 .form-control:focus {
-  border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
@@ -5057,8 +5117,35 @@ button.close {
   outline: 0;
 }
 
+
+
+
+@media (min-width: 801px) {
+    .modal-content iframe {
+        display:flex;
+    }
+    .modal-content b{
+        display:none;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .modal-content iframe {
+        display:none;
+    }
+    
+    .modal-content em {
+        display:none;
+    }
+    .modal-content b{
+        align-content: center;
+    }
+    
+}
+
 .modal-backdrop {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -5968,9 +6055,14 @@ a[class*=button-].button-grey,input[class*=button-].button-grey,button[class*=bu
 }
 
 a[class*=button-].button-blue,input[class*=button-].button-grey,button[class*=button-].button-grey {
-color:aliceblue;
-  border-color: #ddd;
+    color:aliceblue;
+  border-color: black;
   align-content: center;
+}
+
+a[class*=button-]:hover {
+    color:aliceblue;
+  border-color: #ddd;
 }
 
 
@@ -6239,6 +6331,7 @@ a[class*=button-].button-light,input[class*=button-].button-light,button[class*=
   padding-bottom: 5.4rem;
   padding-top: 108px;
   padding-top: 5.4rem;
+    
 }
 
 .service {
@@ -6288,10 +6381,7 @@ a[class*=button-].button-light,input[class*=button-].button-light,button[class*=
 }
 
 .section-facts {
-  background-image: -moz-linear-gradient(top, #549eae,#83cede);
-  background-image: -o-linear-gradient(top, #549eae,#83cede);
-  background-image: -webkit-linear-gradient(top, #549eae,#83cede);
-  background-image: linear-gradient(to bottom, #549eae,#83cede);
+  background-color: white;
   padding-top: 189px;
   padding-top: 9.45rem;
   padding-bottom: 135px;
@@ -6300,7 +6390,7 @@ a[class*=button-].button-light,input[class*=button-].button-light,button[class*=
 }
 
 .facts-header h3 {
-  background: url(../img/header-bg-light-blue.png) no-repeat;
+  background: url(../img/header-bg-red.png) no-repeat;
   color: #fff;
 }
 
@@ -6318,10 +6408,8 @@ h2.start-count {
 }
 
 .section-portfolio {
-  background-image: -moz-linear-gradient(top, #3a5f9a,#688dc8);
-  background-image: -o-linear-gradient(top, #3a5f9a,#688dc8);
-  background-image: -webkit-linear-gradient(top, #3a5f9a,#688dc8);
-  background-image: linear-gradient(to bottom, #3a5f9a,#688dc8);
+    
+  background-color: white;
   padding-top: 216px;
   padding-top: 10.8rem;
   padding-bottom: 135px;
@@ -6365,6 +6453,11 @@ h2.start-count {
   -o-transform: rotate(45deg) scale(1);
   -webkit-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
+}
+
+.portfolio {
+    border-color: black;
+    border: solid;
 }
 
 .entry-title {
@@ -6459,10 +6552,8 @@ h2.start-count {
 }
 
 .section-clients {
-  background-image: -moz-linear-gradient(top, #c65151,#e77272);
-  background-image: -o-linear-gradient(top, #c65151,#e77272);
-  background-image: -webkit-linear-gradient(top, #c65151,#e77272);
-  background-image: linear-gradient(to bottom, #c65151,#e77272);
+
+  background-color: white;
   padding-top: 189px;
   padding-top: 9.45rem;
   padding-bottom: 108px;
@@ -6524,8 +6615,8 @@ h2.start-count {
 }
 
 .contact-header h3 {
-  background: url(../img/header-bg-gray.png) no-repeat;
-  color: #262626;
+  background: url(../img/header-bg-gray2.png) no-repeat;
+  color: #fff;
 }
 
 #map-canvas {
